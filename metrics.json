@@ -1,0 +1,171 @@
+{
+  "params": {
+    "members": 6000,
+    "sigma": 0.02,
+    "dt": 0.005,
+    "T": 300.0,
+    "stride": 40,
+    "window": 15.0,
+    "grids": [
+      16,
+      64,
+      256
+    ]
+  },
+  "systems": {
+    "harmonic": {
+      "label": "harmonic spring (isochronous)",
+      "energy_drift_max": 7.50166595508972e-12,
+      "swing_start": 0.6956222759504767,
+      "swing_end": 0.7082221215329285,
+      "swing_ratio": 1.0181130564935343,
+      "coherence_time": null,
+      "entropy_start_bits": {
+        "16": 0.30811921486075705,
+        "64": 1.1958011725348046,
+        "256": 2.984598995436226
+      },
+      "entropy_end_bits": {
+        "16": 0.3126778101580759,
+        "64": 1.2137845679070054,
+        "256": 3.008021766475725
+      },
+      "entropy_ceiling_bits": {
+        "16": 4.04360894657678,
+        "64": 6.010797544065608,
+        "256": 8.00288936524288
+      },
+      "entropy_fraction_of_ceiling": {
+        "16": 0.07732642159246908,
+        "64": 0.20193402938772428,
+        "256": 0.3758669686900557
+      },
+      "decay": null
+    },
+    "pendulum": {
+      "label": "single pendulum, near the top (integrable, anharmonic)",
+      "energy_drift_max": 1.5531353980691165e-11,
+      "swing_start": 2.3025033495423903,
+      "swing_end": 0.055813137179863526,
+      "swing_ratio": 0.024240198039649354,
+      "coherence_time": 104.2,
+      "entropy_start_bits": {
+        "16": 0.1349011240622418,
+        "64": 0.5120923306478107,
+        "256": 1.7913261879213869
+      },
+      "entropy_end_bits": {
+        "16": 3.5366133221104312,
+        "64": 5.271741878180182,
+        "256": 7.194669852088905
+      },
+      "entropy_ceiling_bits": {
+        "16": 4.04360894657678,
+        "64": 6.010797544065608,
+        "256": 8.00288936524288
+      },
+      "entropy_fraction_of_ceiling": {
+        "16": 0.8746180377072419,
+        "64": 0.8770453237748647,
+        "256": 0.8990090358284686
+      },
+      "decay": {
+        "exponential": {
+          "slope": -0.017103950333664457,
+          "r2": 0.9478350147998957
+        },
+        "power_law": {
+          "slope": -2.2924329448823206,
+          "r2": 0.9293935563090192
+        },
+        "verdict": "exponential",
+        "n_points": 1283
+      }
+    },
+    "double_low": {
+      "label": "double pendulum, small swing (near-integrable)",
+      "energy_drift_max": 8.675726803630823e-12,
+      "swing_start": 0.4946985508269062,
+      "swing_end": 0.49599919941727666,
+      "swing_ratio": 1.002629174045884,
+      "coherence_time": null,
+      "entropy_start_bits": {
+        "16": 0.2658995159633907,
+        "64": 1.047107294380846,
+        "256": 2.779652209442937
+      },
+      "entropy_end_bits": {
+        "16": 1.0082180328481476,
+        "64": 2.716552895758433,
+        "256": 4.692284347022253
+      },
+      "entropy_ceiling_bits": {
+        "16": 4.04360894657678,
+        "64": 6.010797544065608,
+        "256": 8.00288936524288
+      },
+      "entropy_fraction_of_ceiling": {
+        "16": 0.24933618610713584,
+        "64": 0.4519454990528594,
+        "256": 0.5863237804337492
+      },
+      "decay": null
+    },
+    "double_high": {
+      "label": "double pendulum, wide swing (chaotic)",
+      "energy_drift_max": 1.0397817944152177e-07,
+      "swing_start": 1.6058125568085646,
+      "swing_end": 0.01860256703655603,
+      "swing_ratio": 0.011584519598929576,
+      "coherence_time": 34.4,
+      "entropy_start_bits": {
+        "16": 0.0,
+        "64": 0.0,
+        "256": 0.06938738040167175
+      },
+      "entropy_end_bits": {
+        "16": 3.913789126253188,
+        "64": 5.89128818438975,
+        "256": 7.886831989596337
+      },
+      "entropy_ceiling_bits": {
+        "16": 4.04360894657678,
+        "64": 6.010797544065608,
+        "256": 8.00288936524288
+      },
+      "entropy_fraction_of_ceiling": {
+        "16": 0.9678950605662561,
+        "64": 0.980117553652452,
+        "256": 0.9854980657172911
+      },
+      "decay": {
+        "exponential": {
+          "slope": -0.07302055180429562,
+          "r2": 0.9590354327339944
+        },
+        "power_law": {
+          "slope": -3.243829337975158,
+          "r2": 0.9654406666926192
+        },
+        "verdict": "power_law",
+        "n_points": 281
+      }
+    }
+  },
+  "control": {
+    "note": "same chaotic world, sigma = 0: every member is the same world",
+    "entropy_max_bits": 0.0,
+    "swing_ratio": 0.5946691239734391,
+    "member_spread_max": 6.661338147750939e-16
+  },
+  "drum": {
+    "beat_frequency": 2.0480975581086827,
+    "beat_period": 3.0678154379432,
+    "return_correlation_after_one_period": 1.0,
+    "contrast_min": 3.362636626080445e-05,
+    "contrast_max": 5.535721694457126e-05,
+    "contrast_ratio_last_first": 1.0,
+    "note": "the pattern beats forever and returns exactly: the interference term has a fixed coefficient, so nothing decays"
+  },
+  "runtime_seconds": 323.0
+}

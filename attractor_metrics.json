@@ -1,0 +1,28 @@
+{
+  "lorenz": {
+    "label": "Lorenz - a strange attractor with no outside clock",
+    "swing_start": 7.147991239885477,
+    "swing_tail_mean": 0.08231365999239032,
+    "swing_ratio": 0.011515635264503924,
+    "coherence_time": 5.05,
+    "entropy_start_bits": 0.026664574714191477,
+    "entropy_end_bits": 5.511105842001317,
+    "entropy_ceiling_bits": 6.010797544065608,
+    "control_entropy_max_bits": 0.0,
+    "control_spread_max": 5.329070518200751e-15,
+    "half_step_swing_ratio": 0.025147342480777605
+  },
+  "driven": {
+    "label": "driven damped pendulum - chaos riding on a periodic drive",
+    "swing_start": 0.744436224157133,
+    "swing_tail_mean": 0.4211371644113785,
+    "swing_ratio": 0.5657128854633575,
+    "coherence_time": null,
+    "entropy_start_bits": 1.4730794165281174,
+    "entropy_end_bits": 5.197164506091159,
+    "entropy_ceiling_bits": 6.010797544065608,
+    "control_entropy_max_bits": 0.0,
+    "control_spread_max": 3.3306690738754696e-16,
+    "half_step_swing_ratio": 0.5640394746055623
+  }
+}
