@@ -1,5 +1,7 @@
 # Quest for Entropy #5 — Building a Wave
 
+**Article:** [Quest for Entropy #5 — "Building a Wave"](https://questforentropy.substack.com/p/building-a-wave)
+
 Companion code for the article *Building a Wave*.
 
 **The question:** can a probability cloud spread into a shape, stop spreading below the flat
