@@ -1,6 +1,6 @@
 # Quest for Entropy #5 — Building a Wave
 
-**Article:** [Quest for Entropy #5 — "Building a Wave"](https://questforentropy.substack.com/p/building-a-wave)
+**Article:** [Quest for Entropy #5 — "Building a Wave"](https://questforentropy.com/p/building-a-wave) · also on [Substack](https://questforentropy.substack.com/p/building-a-wave)
 
 **Series:** ← [#4 I Never Understood Entropy](https://github.com/masteris777/quest-for-entropy-i-never-understood-entropy) · [#6 The Droplet That Walks](https://github.com/masteris777/quest-for-entropy-the-droplet-that-walks) →
 
